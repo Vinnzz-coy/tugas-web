@@ -59,6 +59,7 @@ images.forEach((image) => {
     }
   });
 });
+
 document.querySelector('form').addEventListener('submit', function(e) {
   e.preventDefault();
   
