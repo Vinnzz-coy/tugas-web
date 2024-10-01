@@ -1,8 +1,28 @@
-const switchers = [...document.querySelectorAll('.switcher')]
+const forms = document.querySelector(".forms"),
+  pwShowHide = document.querySelectorAll(".eye-icon"),
+  links = document.querySelectorAll(".link");
 
-switchers.forEach(item => {
-	item.addEventListener('click', function() {
-		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
-		this.parentElement.classList.add('is-active')
-	})
-})
+pwShowHide.forEach(eyeIcon => {
+  eyeIcon.addEventListener("click", () => {
+    let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+    pwFields.forEach(password => {
+      if (password.type === "password") { 
+        password.type = "text";
+        eyeIcon.classList.replace("bx-hide", "bx-show"); 
+        return;
+      }
+      password.type = "password"; 
+      eyeIcon.classList.replace("bx-show", "bx-hide"); 
+    });
+
+  });
+});
+
+
+links.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault(); 
+    forms.classList.toggle("show-signup");
+  });
+});

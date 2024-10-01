@@ -1,290 +1,203 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
-	margin: 0;
-	font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
-	background-image: url("https://wallpaperaccess.com/full/1428884.jpg");
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://images.wallpaperscraft.com/image/single/wolf_silhouette_hills_130119_1280x720.jpg") no-repeat center; /* ganti dengan URL gambar latar belakang Anda */
     background-size: cover;
-}
-
-.forms-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.section-title {
-	font-size: 55px;
-	letter-spacing: 1px;
-	color: #00000000;
-	-webkit-text-stroke: 2px rgb(255, 255, 255);
-}
-
-
-.forms {
-	display: flex;
-	align-items: flex-start;
-	margin-top: 30px;
-}
-
-.form-wrapper {
-	animation: hideLayer .3s ease-out forwards;
-}
-
-.form-wrapper.is-active {
-	animation: showLayer .3s ease-in forwards;
-}
-
-@keyframes showLayer {
-	50% {
-		z-index: 1;
-	}
-	100% {
-		z-index: 1;
-	}
-}
-
-@keyframes hideLayer {
-	0% {
-		z-index: 1;
-	}
-	49.999% {
-		z-index: 1;
-	}
-}
-
-.switcher {
-	position: relative;
-	cursor: pointer;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0;
-	text-transform: uppercase;
-	font-family: inherit;
-	font-size: 25px;
-	letter-spacing: .5px;
-	color: #0004ff00;
-	-webkit-text-stroke: 1px rgb(8, 219, 242);
-	background-color: transparent;
-	border: none;
-	outline: none;
-	transform: translateX(0);
-	transition: all .3s ease-out;
-}
-
-.form-wrapper.is-active .switcher-login {
-	color: #ffffff;
-	transform: translateX(90px);
-}
-
-.form-wrapper.is-active .switcher-signup {
-	color: #ffffff;
-	transform: translateX(-90px);
-}
-
-.underline {
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	overflow: hidden;
-	pointer-events: none;
-	width: 100%;
-	height: 2px;
-}
-
-.underline::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: inherit;
-	display: block;
-	width: inherit;
-	height: inherit;
-	background-color: currentColor;
-	transition: transform .2s ease-out;
-}
-
-.switcher-login .underline::before {
-	transform: translateX(101%);
-}
-
-.switcher-signup .underline::before {
-	transform: translateX(-101%);
-}
-
-.form-wrapper.is-active .underline::before {
-	transform: translateX(0);
-}
+  }
 
 .form {
-	overflow: hidden;
-	min-width: 260px;
-	margin-top: 50px;
-	padding: 30px 25px;
-  border-radius: 5px;
-	transform-origin: top;
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: transparent;
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(9px); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+             0 0 20px rgba(0, 0, 0, 0.9);
+  }
+
+.form.signup {
+  opacity: 0;
+  pointer-events: none;
 }
 
-.form-login {
-	animation: hideLogin .3s ease-out forwards;
+.forms.show-signup .form.signup {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.form-wrapper.is-active .form-login {
-	animation: showLogin .3s ease-in forwards;
+.forms.show-signup .form.login {
+  opacity: 0;
+  pointer-events: none;
 }
 
-@keyframes showLogin {
-	0% {
-		background: #d7e7f1;
-		transform: translate(40%, 10px);
-	}
-	50% {
-		transform: translate(0, 0);
-	}
-	100% {
-		background-color: #2d26a8ae;
-		transform: translate(35%, -20px);
-	}
+header {
+  font-size: 28px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  text-align: center;
 }
 
-@keyframes hideLogin {
-	0% {
-		background-color: #fff;
-		transform: translate(35%, -20px);
-	}
-	50% {
-		transform: translate(0, 0);
-	}
-	100% {
-		background: #1484d4d6;
-		transform: translate(40%, 10px);
-	}
+form {
+  margin-top: 30px;
 }
 
-.form-signup {
-	animation: hideSignup .3s ease-out forwards;
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
 }
 
-.form-wrapper.is-active .form-signup {
-	animation: showSignup .3s ease-in forwards;
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
 }
 
-@keyframes showSignup {
-	0% {
-		background: #d7e7f1;
-		transform: translate(-40%, 10px) scaleY(.8);
-	}
-	50% {
-		transform: translate(0, 0) scaleY(.8);
-	}
-	100% {
-		background-color: #2d26a8ae;
-		transform: translate(-35%, -20px) scaleY(1);
-	}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
 }
 
-@keyframes hideSignup {
-	0% {
-		background-color: #fff;
-		transform: translate(-35%, -20px) scaleY(1);
-	}
-	50% {
-		transform: translate(0, 0) scaleY(.8);
-	}
-	100% {
-		background: #1484d4d6;
-		transform: translate(-40%, 10px) scaleY(.8);
-	}
+.field input:focus {
+  border-bottom-width: 2px;
 }
 
-.form fieldset {
-	position: relative;
-	opacity: 0;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	transition: all .3s ease-out;
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
 }
 
-.form-login fieldset {
-	transform: translateX(-50%);
+.field button {
+  color: #fff;
+  background-color: #0171d3bb;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.form-signup fieldset {
-	transform: translateX(50%);
+.field button:hover {
+  background-color: #ff0000a5;
 }
 
-.form-wrapper.is-active fieldset {
-	opacity: 1;
-	transform: translateX(0);
-	transition: opacity .4s ease-in, transform .35s ease-in;
+.form-link {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.form legend {
-	position: absolute;
-	overflow: hidden;
-	width: 1px;
-	height: 1px;
-	clip: rect(0 0 0 0);
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
-.input-block {
-	margin-bottom: 20px;
+.form a {
+  color: #51c2c0;
+  text-decoration: none;
 }
 
-.input-block label {
-	font-size: 14px;
-  color: #a1b4b4;
+.form-content a:hover {
+  text-decoration: underline;
 }
 
-.input-block input {
-	display: block;
-	width: 100%;
-	margin-top: 8px;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-size: 16px;
-	line-height: 40px;
-	color: #3b4465;
-  background: #eef9fe;
-  border: 1px solid #cddbef;
-  border-radius: 2px;
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
 }
 
-.form [type='submit'] {
-	opacity: 0;
-	display: block;
-	min-width: 120px;
-	margin: 30px auto 10px;
-	font-size: 18px;
-	line-height: 40px;
-	border-radius: 25px;
-	border: none;
-	transition: all .3s ease-out;
+.line::before {
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fffcfc;
+  color: #000000;
+  padding: 0 15px;
 }
 
-.form-wrapper.is-active .form [type='submit'] {
-	opacity: 1;
-	transform: translateX(0);
-	transition: all .4s ease-in;
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-login {
-	color: #4CAF50;
-	background: #ffffff00;
-    box-shadow: inset 0 0 0 2px #4CAF50;
-	transform: translateX(-30%);
+a.facebook {
+  color: #fff;
+  background-color: #4267b2;
 }
 
-.btn-signup {
-	color: #4CAF50;
-	background: #ffffff00;
-	box-shadow: inset 0 0 0 2px #4CAF50;
-	transform: translateX(30%);
+a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
+
+.facebook-icon,
+img.google-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+img.google-img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+a.google {
+    border: 1px solid #ffffff;
+    background-color: #ffffff; 
+  }
+  
+  a.google span {
+    font-weight: 500;
+    opacity: 1; 
+    color: #000000; 
+  }
+
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 20px 10px;
+  }
+}
+

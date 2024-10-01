@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
-     <title>Website WallVinnzz</title> 
+
+     <title>WallVinnzz</title>
 </head>
 <body>
     <nav>
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo navLogo"><a href="#">WallVinnzz</a></span>
+            <span class="logo navLogo"><a href="homeBtn">WallVinnzz</a></span>
 
             <div class="menu">
                 <div class="logo-toggle">
-                    <span class="logo"><a href="#">WallVinnzz</a></span>
+                    <span class="logo"><a href="homeBtn">WallVinnzz</a></span>
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
+
                 <ul class="nav-links">
                     <li><a href="#home" id="homeBtn">Home</a></li>
                     <li><a href="#wallpaper-section" id="wallpaperBtn">Wallpaper</a></li>
                     <li><a href="#social-section" id="socialBtn">Social</a></li>
                     <li><a href="#contact-section" id="contact"> Contact</a></li>
-                    <li><a href="login.html">Login / Sing in</a></li>
                 </ul>
             </div>
+            
+            <div class="login-btn-nav">
+                <a href="login.html" class="login-link">Login / Signup</a>
+            </div>
+            
             <div class="darkLight-searchBox">
                 <div class="dark-light">
                     <i class='bx bx-moon moon'></i>
@@ -44,142 +50,507 @@
                         <input type="text" placeholder="Search...">
                         <i class='bx bx-search'></i>
                     </div>
+
                 </div>
             </div>
         </div>
     </nav>
-    
-    <section id="home" class="home-section">
+
+    <section id="home" class="home-section"></section>
         <div class="home-content">
-            <h1>Welcome to WallVinnzz</h1>
+            <h1>Welcome To WallVinnzz</h1>
         </div>
     </section>
 
-    <section id="wallpaper-section">
-        <h3>Pilih Kategori Wallpaper</h3>
-        <div class="wallpaper-buttons">
-          <button><a href="#anime-section">Anime</a></button>
-          <button><a href="#natural-section">Natural</a></button>
-          <button><a href="#mobil-section">Mobil</a></button>
-          <button><a href="#abstrak-section">Abstrak</a></button>
+    <section class="koleksi-text">
+        <div class="koleksi-wall">
+            <h1>Koleksi Wallpaper Anda</h1>
         </div>
+    </section>
+
+    <section id="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+      
+        <label for="s1" id="slide1"><img src="https://images.wallpaperscraft.com/image/single/girl_vampire_jewelry_1054796_1280x720.jpg" alt=""></label>
+        <label for="s2" id="slide2"><img src="https://images.wallpaperscraft.com/image/single/warrior_katana_anime_1075388_1280x720.jpg" alt=""></label>
+        <label for="s3" id="slide3"><img src="https://images.wallpaperscraft.com/image/single/child_river_dreams_127495_1280x720.jpg" alt=""></label>
+        <label for="s4" id="slide4"><img src="https://images.wallpaperscraft.com/image/single/river_home_art_128746_1280x720.jpg" alt=""></label>
+        <label for="s5" id="slide5"><img src="https://images.wallpaperscraft.com/image/single/car_gray_wet_147750_1280x720.jpg" alt=""></label>
       </section>
 
-      
-      <main>
-      <section id="anime-section">
-  <h2>Wallpaper Anime</h2>
-      <div class="image-grid">
-        <img src="https://shorturl.at/kY3QU" alt="Anime Wallpaper 1">
-        <img src="https://shorturl.at/qz3tb" alt="Anime Wallpaper 2">
-        <img src="https://shorturl.at/zOCtq" alt="Anime Wallpaper 3">
-        <img src="https://shorturl.at/LLjZ7" alt="Anime Wallpaper 4">
-        <img src="https://rb.gy/6mlkek" alt="Anime Wallpaper 5">
-        <img src="https://rb.gy/u3fwy3" alt="Anime Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/18381.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/6294122.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21591.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21593.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21599.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21602.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21609.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21612.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21613.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21615.jpg" alt="Anime Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/21622.jpg" alt="Anime Wallpaper 6">
-        <img src="https://images3.alphacoders.com/137/thumbbig-1374575.webp" alt="Anime Wallpaper 6">
-      </div>
+    <section class="kategori-text" id="wallpaper-section">
+        <h1>Kategori Wallpaper</h1>
     </section>
-    <section id="natural-section">
-  <h2>Wallpaper Natural</h2>
-      <div class="image-grid">
-        <img src="https://rb.gy/qsld2t" alt="Alam Wallpaper 1">
-        <img src="https://wallpaperaccess.com/full/31192.jpg" alt="Alam Wallpaper 2">
-        <img src="https://wallpaperaccess.com/full/31193.jpg" alt="Alam Wallpaper 3">
-        <img src="https://wallpaperaccess.com/full/2802364.jpg" alt="Alam Wallpaper 4">
-        <img src="https://wallpaperaccess.com/full/1552653.jpg" alt="Alam Wallpaper 5">
-        <img src="https://wallpaperaccess.com/full/2802396.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31189.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31191.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/2795.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31196.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31197.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31198.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/4931.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31201.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31203.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31204.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31205.jpg" alt="Alam Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/31207.jpg" alt="Alam Wallpaper 6">
-      </div>
-    </section>
-   <section id="mobil-section">
-  <h2>Wallpaper Mobil</h2>
-      <div class="image-grid">
-        <img src="https://wallpaperaccess.com/full/13642.jpg" alt="Mobil Wallpaper 1">
-        <img src="https://wallpaperaccess.com/full/13643.jpg" alt="Mobil Wallpaper 2">
-        <img src="https://wallpapercave.com/wp/wp8754789.jpg" alt="Mobil Wallpaper 3">
-        <img src="https://wallpaperaccess.com/full/13649.jpg" alt="Mobil Wallpaper 4">
-        <img src="https://wallpapercave.com/wp/wp8754768.jpg" alt="Mobil Wallpaper 5">
-        <img src="https://wallpapercave.com/wp/wp5211008.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13683.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13687.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13664.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13665.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13666.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13670.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13672.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13673.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13674.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13677.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13690.jpg" alt="Mobil Wallpaper 6">
-        <img src="https://wallpaperaccess.com/full/13682.jpg" alt="Mobil Wallpaper 6">
-      </div>
-    </section>
-  <section id="abstrak-section">
-  <h2>Wallpaper Abstrak</h2>
-      <div class="image-grid">
-        <img src="https://wallpaperaccess.com/full/25558.jpg" alt="Abstrac Wallpaper 1">
-        <img src="https://wallpaperaccess.com/full/25559.jpg" alt="Abstrac Wallpaper 2">
-        <img src="https://wallpaperaccess.com/full/25559.jpg" alt="Abstrac Wallpaper 3">
-        <img src="https://wallpaperaccess.com/full/25570.jpg" alt="Abstrac Wallpaper 4">
-        <img src="https://wallpaperaccess.com/full/25572.jpg" alt="Abstrac Wallpaper 5">
-        <img src="https://wallpaperaccess.com/full/25574.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14325.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14308.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14231.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14306.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14030.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14018.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/14008.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/13525.png" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/13512.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/13246.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs/13298.jpg" alt="Abstrac Wallpaper 6">
-        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/17275.jpg" alt="Abstrac Wallpaper 6">
-      </div>
-    </section>
-  </main>
-  <section id="social-section">
-    <h3>Ikut Sosial Media Saya</h3>
-    <div class="socialBtn">
-        <a href="https://www.facebook.com/profile.php?id=61560661221933&mibextid=ZbWKwL" target="_blank">
-            <box-icon type='logo' name='facebook-square'></box-icon>Facebook
-        </a>
-        <a href="https://www.youtube.com/@Vinnzz_coy" target="_blank">
-            <box-icon type='logo' name='youtube'></box-icon>Youtube
-        </a>
-        <a href="https://www.instagram.com/vinnzz_cooy?igsh=Zm5hMDMwMDdjeTVy" target="_blank">
-            <box-icon type='logo' name='instagram'></box-icon>Instagram
-        </a>
-        <a href="https://www.tiktok.com/@vinnzzcoy?_t=8pWiHSrraOv&_r=1" target="_blank">
-            <box-icon type='logo' name='tiktok'></box-icon>TikTok
-        </a>
+
+    <section>
+    <div class="wallpaper-buttons">
+      <button><a href="#anime-section">Anime</a></button>
+      <button><a href="#natural-section">Natural</a></button>
+      <button><a href="#mobil-section">Mobil</a></button>
+      <button><a href="#abstrak-section">Abstrak</a></button>
     </div>
-</section>
-      <section id="contact-section">
+    </section>
+
+    <main>
+        <section id="anime-section">
+            <h2>Wallpaper Anime</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/girl_vampire_jewelry_1054796_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/warrior_katana_anime_1075388_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/girl_witch_ball_1145093_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/girl_gesture_jewelry_966884_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images3.alphacoders.com/137/1374575.png" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/girl_cute_train_1143644_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <main>
+        <section id="natural-section">
+            <h2>Wallpaper Natural</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/forest_path_summer_125991_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/bridge_river_flow_100663_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/lake_forest_snow_130421_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/eruption_lava_volcano_45542_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/road_trees_shadow_119606_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/mountain_river_snow_93245_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <main>
+        <section id="mobil-section">
+            <h2>Wallpaper Mobil</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/car_gray_wet_147750_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/porsche_911_carrera_rsr_porsche_sports_car_139640_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/nissan_gtr_nissan_sportscar_139668_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/sportscar_car_white_150286_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/nissan_gtr_supercar_121502_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://wallpapercave.com/wp/wp8754768.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <main>
+        <section id="abstrak-section">
+            <h2>Wallpaper Abstrak</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://images.wallpaperscraft.com/image/single/abstraction_light_neon_97687_1280x720.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://wallpapercave.com/uwp/uwp4216290.jpeg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_2t/18949.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_2t/18741.png" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_2t/18148.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_2t/17712.jpg" alt="Anime Wallpaper 1">
+                    <div class="button-group">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Download</span>
+                            </span>
+                        </button>
+                        <button class="button save-button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Save</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <section id="social-section">
+        <h2>Ikut Sosial Media Saya</h2>
+        <div class="socialBtn">
+            <a href="https://www.facebook.com/profile.php?id=61560661221933&mibextid=ZbWKwL" target="_blank">
+                <box-icon type='logo' name='facebook-square'></box-icon>Facebook
+            </a>
+            <a href="https://www.youtube.com/@Vinnzz_coy" target="_blank">
+                <box-icon type='logo' name='youtube'></box-icon>Youtube
+            </a>
+            <a href="https://www.instagram.com/vinnzz_cooy?igsh=Zm5hMDMwMDdjeTVy" target="_blank">
+                <box-icon type='logo' name='instagram'></box-icon>Instagram
+            </a>
+            <a href="https://www.tiktok.com/@vinnzzcoy?_t=8pWiHSrraOv&_r=1" target="_blank">
+                <box-icon type='logo' name='tiktok'></box-icon>TikTok       
+            </a>
+        </div>
+    </section>
+
+    <section id="contact-section"></section>
         <div class="container">
-          <h2>Contact</h2>
+          <h2>Contact Saya</h2>
           <form action="https://formsubmit.co/kevinnazar76@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="New contact form submission">
               <input type="hidden" name="_captcha" value="false">
@@ -200,6 +571,8 @@
           <div id="status-message"></div>
       </div>
       </section>
-    <script src="javascript.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
