@@ -81,3 +81,19 @@ abstrakButton.addEventListener('click', () => {
   document.querySelector('#abstrak-section').scrollIntoView({ behavior: 'smooth' });
 });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const downloadButtons = document.querySelectorAll('.download-button');
+
+        downloadButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const imageUrl = this.getAttribute('data-url');
+                const link = document.createElement('a');
+                link.href = imageUrl;
+                link.download = ''; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+    });
+
